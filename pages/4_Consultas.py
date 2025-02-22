@@ -5,7 +5,7 @@ from utils.theme import set_theme
 
 def main():
     if not check_auth():
-        st.warning("Please login to access this page")
+        st.warning("Por favor, inicie sesión para acceder a esta página")
         st.stop()
     
     st.title("Consultas")
