@@ -11,4 +11,3 @@ wheels/
 
 # Environment variables
 .env 
-.hash_gen.py 
