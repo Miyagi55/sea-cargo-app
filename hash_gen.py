@@ -8,7 +8,7 @@ def generate_hash(password: str) -> str:
     salt = bcrypt.gensalt()
     hashed_password = bcrypt.hashpw(password_bytes, salt)
     
-    return hashed_password.decode('utf-8')  # Convert to string for storage
+    return hashed_password.decode('utf-8')  # Convert to string for storage #
 
 if __name__ == "__main__":
     user_password = input("Enter password to hash: ")
