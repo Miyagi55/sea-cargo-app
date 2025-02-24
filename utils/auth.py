@@ -14,7 +14,8 @@ def hash_password(password):
     return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 
 def verify_password(password, hashed):
-    return bcrypt.checkpw(password.encode('utf-8'), hashed)
+   
+    return bcrypt.checkpw(password.encode('utf-8'), hashed.encode('utf-8'))
 
 def check_auth():
 
@@ -27,10 +28,9 @@ def fetch_user_data(username):
     
 
     try:
-        cur = None
         conn = get_db_connection()
         cur = conn.cursor()
-        cur.execute("SELECT password, role FROM users WHERE username = %s", (username,))
+        cur.execute("SELECT passw_hash, role FROM usuarios WHERE username = %s", (username,))
         result = cur.fetchone()
         return result
 
