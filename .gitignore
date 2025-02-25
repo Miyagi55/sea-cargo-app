@@ -6,6 +6,9 @@ dist/
 wheels/
 *.egg-info
 
+#Sensitive files
+excel_files/
+
 # Virtual environments
 .venv
 
