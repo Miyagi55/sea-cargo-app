@@ -1,5 +1,5 @@
 import streamlit as st
-from utils.auth import check_auth, logout
+from utils.auth2 import check_auth, logout
 from utils.theme import set_theme
 
 def main():
@@ -9,7 +9,7 @@ def main():
     
     st.title("Ajustes")
     st.write("Settings Page")
-    set_theme()
+
     logout()
 
 if __name__ == "__main__":

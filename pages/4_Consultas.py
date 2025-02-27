@@ -1,5 +1,5 @@
 import streamlit as st
-from utils.auth import check_auth, logout
+from utils.auth2 import check_auth, logout
 from utils.database import get_db_connection
 from utils.theme import set_theme
 
@@ -22,7 +22,7 @@ def main():
     except Exception as e:
         st.error(f"Database error: {e}")
     
-    set_theme()
+    
     logout()
 
 if __name__ == "__main__":

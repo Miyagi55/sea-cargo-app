@@ -6,7 +6,7 @@ def generate_hash(password: str) -> str:
     
     # Generate a salt and hash the password
     salt = bcrypt.gensalt()
-    hashed_password = bcrypt.hashpw(password_bytes, salt)
+    hashed_password = bcrypt.hashpw(password_bytes, bcrypt.gensalt(rounds=14))
     
     return hashed_password.decode('utf-8')  # Convert to string for storage #
 
