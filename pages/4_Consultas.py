@@ -1,7 +1,7 @@
 import streamlit as st
 from utils.auth2 import check_auth, logout
 from utils.database import get_db_connection
-from utils.theme import set_theme
+
 
 def main():
     if not check_auth():
@@ -14,7 +14,7 @@ def main():
     try:
         conn = get_db_connection()
         cur = conn.cursor()
-        cur.execute("SELECT * FROM your_table LIMIT 10")  # Example query
+        cur.execute("SELECT * FROM info_prospectos LIMIT 10")  # Example query
         data = cur.fetchall()
         st.write(data)
         cur.close()

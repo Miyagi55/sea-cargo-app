@@ -1,6 +1,6 @@
 import streamlit as st
 from utils.auth2 import check_auth, logout
-from utils.theme import set_theme
+
 
 def main():
     if not check_auth():
