@@ -53,7 +53,7 @@ This will:
 Once authenticated, users can ask the AI **natural language questions** about the database (e.g., "What were the total sales last quarter?") and receive relevant results.
 In this case, we are migrating data from many Excel files into a PostgreSQL database. To achieve this, we might know the business processes, their main mission, and recognize the entities (tables) of our new database. Here is a basic example of how to model and normalize data:
 
-![image](https://github.com/Miyagi55/sea-cargo-app/blob/main/Blank diagram (4).png)
+![image](https://github.com/Miyagi55/sea-cargo-app/blob/main/Blank%20diagram%20(4).png)
 
 ## 🔥 Why This Matters
 - **Prevents unauthorized access** 🔐
